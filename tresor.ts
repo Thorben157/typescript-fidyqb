@@ -12,6 +12,7 @@ export class Tresor {
      this.gegenstaende = new Array();
    }
  
+   
    //todo Gegenstand hinzufügen (addGegenstand)
    /**
     * Da gegenstaende ein Array ist und keine ArrayList,

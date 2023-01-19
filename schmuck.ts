@@ -13,7 +13,16 @@ export class Schmuck extends Gegenstand {
   setbezeichnung(String, bezeichnung){
     this.bezeichnung = bezeichnung
   }
-  toString(): any{
-    let text : string = ""
+  
+
+  toString(): string {
+    /**
+     * Datentyp der Variablen 'text' muss nicht zwangsläufig festgelegt werden.
+     * Er ergibt sich andernfalls auch durch die Zuweisung.
+     */
+    let text: string = "\n\nSchmuck"; // ("let" erstellt, "text" ist der name, "string" macht den Datentyp, "\n" macht einen Zeilenumbruch, "Schmuck" ist der die Überschrieft die in der Konsole ausgeben werden) 
+    text += "\nBezeinung: " + this.bezeichnung; //("text +=" sagt was dazu Kopiert wird, "\nBezeichnung" macht einen Zeilen umbruch und schreibt Bezeichnung, "+ this.bezeichnung" fügt danach die Bezeichnung ein)
+    text += super.toString();
+    return text;
   }
 }

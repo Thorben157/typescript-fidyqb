@@ -5,19 +5,5 @@ export class aktie extends Gegenstand{
     super(id,wert)
   }
 
-  get unternehmen(){
-    return this.unternehmen;
-  }
-
-  set unternehmen(){
-    this.Unternehmen=this.Unternehmen;
-  }
-
-  get nennwert(){
-    return this.nennwert;
-  }
-
-  set nennwert(nennwert:number){
-    this.nennwert=this.nennwert;
-  }
+  
 }
